@@ -1,0 +1,87 @@
+/* Reset and General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    color: #333;
+}
+
+/* News Section */
+.news-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e3f2fd;
+    border-radius: 8px;
+}
+
+/* Individual News Items */
+.news-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+/* Full-screen setup */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    background: black;
+}
+
+/* Animated Background Container */
+.animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('trading-bg.jpg') no-repeat center center/cover;
+    animation: zoomEffect 10s infinite alternate ease-in-out;
+    filter: brightness(0.5);
+}
+
+/* Zoom Animation for Background */
+@keyframes zoomEffect {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+/* Stock Market Graph Overlay */
+.trading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.imgur.com/DOFJYt0.png'); /* Overlay Graph */
+    opacity: 0.2;
+    animation: moveGraph 15s infinite linear;
+}
+
+/* Moving Graph Animation */
+@keyframes moveGraph {
+    0% { transform: translateX(-10%); }
+    50% { transform: translateX(10%); }
+    100% { transform: translateX(-10%); }
+}
